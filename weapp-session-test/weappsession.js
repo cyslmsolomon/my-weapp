@@ -8,7 +8,7 @@ const wrapError = require('./lib/wrapError');
 const jscode2session = require('./lib/jscode2session');
 var http = require('http');
 var querystring = require('querystring');
-var ip='';
+var ip='lualu.carp.mopaasapp.com';
 
 let store;
 
@@ -39,7 +39,7 @@ const handler = co.wrap(function *(req, res, next) {
 			});
 			var options = {
 				host: ip,
-				path:'weapp-session',
+				path:'services/getUser.php',
 				method: 'POST'
 			};
 			var req = http.request(options, function(res) {
