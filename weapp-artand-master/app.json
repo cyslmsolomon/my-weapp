@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/work-detail/work-detail",
+    "pages/discover/discover",
+    "pages/setting/setting",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/qrcode/qrcode",
+    "pages/index/qrcode/qrcode"
+  ],
+  "window":{
+    "backgroundTextStyle": "black",
+    "navigationBarBackgroundColor": "#3a5267",
+    "navigationBarTitleText": "HSBC",   
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "white",
+    "backgroundColor": "rgba(0,0,0,0.90)",
+    "selectedColor":"red",
+    "borderStyle": "black",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text":"手机银行",
+        "iconPath": "images/drawable-xhdpi/icon_banking.png",
+        "selectedIconPath": "images/drawable-xhdpi/icon_banking_select.png"
+      }, {
+      "pagePath": "pages/discover/discover",
+      "iconPath": "images/bar_explore_black.png",
+      "selectedIconPath": "images/bar_explore.png"
+    }, {
+      "pagePath": "pages/setting/setting",
+      "iconPath": "images/bar_mine_black.png",
+      "selectedIconPath": "images/bar_mine.png"
+    },{
+      "pagePath": "pages/setting/setting",
+      "iconPath": "images/bar_mine_black.png",
+      "selectedIconPath": "images/bar_mine.png"
+    }]
+  },
+  "debug": true
+}

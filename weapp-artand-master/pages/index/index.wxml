@@ -1,0 +1,109 @@
+<!--balance-->
+
+<view  class="balance">
+    <image src="/images/drawable-xhdpi/icon_branch_location2.png"  class="local-balance-icon"></image>
+    <text class="local-balance-label">本地账户</text>
+    <text class="local-balance-total_asset">总资产</text>
+    <text class="local-balance-total_asset1">123,456.78</text>
+    <text class="local-balance-rmb">元</text>
+    <text class="local-balance-total_debt">总负债</text>   
+    <text class="local-balance-total_debt1">-2,897.64元</text>
+  </view>
+<view  wx:for="{{imgListTwo}}" class="function-image-two" style="width:{{systemInfo.windowWidth}}px;">
+
+    <image src="{{item[0]}}" class="function-image"
+        style="width:{{(systemInfo.windowWidth)/4}}px;height:88px;">
+    </image>
+
+
+    <image src="{{item[1]}}" class="function-image" bindtap="toast1"
+      style="width:{{(systemInfo.windowWidth)/4}}px;height: 88px;">
+    </image>  
+    <image src="{{item[2]}}" class="function-image"
+      style="width:{{(systemInfo.windowWidth)/4}}px;height: 88px;">
+    </image>
+    <image src="{{item[3]}}" class="function-image"
+      style="width:{{(systemInfo.windowWidth)/4}}px;height: 88px;">
+    </image>
+  </view>
+
+<!-- banner -->
+<view class="section111">
+  <swiper indicator-dots="true" autoplay="true" interval="4000" duration="600"
+    style="height:{{systemInfo.windowWidth/2}}px;width:{{systemInfo.windowWidth}}px;"class="swiper1">
+    <block wx:for="{{swipers}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="500"/>
+      </swiper-item>
+    </block>
+  </swiper>
+<view>
+  
+<view class="section">
+  <view class="flex-wrp" style="height: 100px;flex-dirction:row;">
+    <view class="flex-item"style="width:{{(systemInfo.windowWidth)/4}}px;height:88px;" bindtap="toast1">
+      <image src="{{'/images/drawable-xhdpi/icon_move_money.png'}}" class="function-image"
+      style="width:{{(systemInfo.windowWidth)/4}}px;height: 88px;">
+    </image>
+    <text class="wenben">国内转账</text>
+    </view >
+
+    <view class="flex-item"style="width:{{(systemInfo.windowWidth)/4}}px;height:88px;">
+    <image src="{{'/images/drawable-xhdpi/icon_global_transfer.png'}}" class="function-image"
+      style="width:{{(systemInfo.windowWidth)/4}}px;height: 88px;">
+    </image>
+    <text class="wenben">国际转账</text>
+    </view>
+
+    <view class="flex-item bc_green"style="width:{{(systemInfo.windowWidth)/4}}px;height:88px;">
+      <image src="{{'/images/drawable-xhdpi/icon_fcy_cny_conversion.png'}}" class="function-image"
+        style="width:{{(systemInfo.windowWidth)/4}}px;height: 88px;">
+      </image>
+    <text class="wenben1">结售汇</text>
+    </view>
+
+    <view class="flex-item bc_green"style="width:{{(systemInfo.windowWidth)/4}}px;height:88px;">
+      <image src="{{'/images/drawable-xhdpi/icon_term_deposit.png'}}" class="function-image"
+        style="width:{{(systemInfo.windowWidth)/4}}px;height: 88px;">
+      </image>
+    <text class="wenben">定期存款</text>
+    </view>
+
+  </view>
+
+
+  <view class="section">
+  <view class="flex-wrp" style="height: 100px;flex-dirction:row;">
+    <view class="flex-item"style="width:{{(systemInfo.windowWidth)/4}}px;height:88px;">
+      <image src="{{'/images/drawable-xhdpi/icon_account_opening.png'}}" class="function-image"
+      style="width:{{(systemInfo.windowWidth)/4}}px;height: 88px;">
+    </image>
+    <text class="wenben">预约开户</text>
+    </view >
+
+    <view class="flex-item"style="width:{{(systemInfo.windowWidth)/4}}px;height:88px;">
+    <image src="{{'/images/drawable-xhdpi/icon_rates.png'}}" class="function-image"
+      style="width:{{(systemInfo.windowWidth)/4}}px;height: 88px;">
+    </image>
+    <text class="wenben2">利率汇率查询</text>
+    </view>
+
+    <view class="flex-item bc_green"style="width:{{(systemInfo.windowWidth)/4}}px;height:88px;">
+      <image src="{{'/images/drawable-xhdpi/icon_global_view.png'}}" class="function-image"
+        style="width:{{(systemInfo.windowWidth)/4}}px;height: 88px;">
+      </image>
+    <text class="wenben">全球账户</text>
+    </view>
+
+    <view class="flex-item bc_green"style="width:{{(systemInfo.windowWidth)/4}}px;height:88px;">
+      <image src="{{'/images/drawable-xhdpi/icon_term_deposit.png'}}" class="function-image"
+        style="width:{{(systemInfo.windowWidth)/4}}px;height: 88px;">
+      </image>
+    <text class="wenben2">港澳台转账</text>
+    </view>
+
+  </view>
+
+
+</view>
+
