@@ -1,3 +1,3 @@
 # 微信小程序 Demo Test
-
-Refer: https://github.com/SuperKieran/weapp-artand
+## https://github.com/justjavac/awesome-wechat-weapp
+## Refer: https://github.com/SuperKieran/weapp-artand
